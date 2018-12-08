@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 body {
     margin: 0;
     background-color: #232323;
@@ -29,21 +28,15 @@ body {
     text-transform: uppercase;
     line-height: 1.5cm;
 }
-.mode {
+.nav-bar {
     background: #fff;
-    color: #4c8bf7;
-    text-transform: uppercase;
     height: 30px;
     text-align: center;
-    font-weight: bold;
-    font-size: 20px;
+    margin-bottom: 15px;
 }
-.mode ul {
-    list-style: none;
+.nav-bar button {
+    text-transform: uppercase;
 }
-.mode li {
-}
-
 /* class use for js */
 .pickedColor {
     font-size: 42px;
