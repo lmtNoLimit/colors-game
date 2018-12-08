@@ -5,6 +5,7 @@ body {
     background-color: #232323;
     font-family: 'Montserrat', sans-serif;
 }
+
 .color-container {
     max-width: 500px;
     margin: auto;
@@ -26,27 +27,33 @@ body {
     color: #fff;
     font-size: 25px;
     text-transform: uppercase;
-    line-height: 1.5cm;    
+    line-height: 1.5cm;
 }
 .mode {
     background: #fff;
-    color: #4c8bf7;    
+    color: #4c8bf7;
     text-transform: uppercase;
     height: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 20px;
 }
 .mode ul {
     list-style: none;
 }
 .mode li {
-    display: inline;
-    padding: 0 10px;
 }
+
+/* class use for js */
 .pickedColor {
     font-size: 42px;
+}
+.shake {
+	animation-name: shake;
+    animation-duration: 1s;
+}
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
