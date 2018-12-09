@@ -16,6 +16,7 @@ body {
     background: white;
     margin: 1.66%;
     float: left;
+    transition: 0.8s all linear;
 }
 .title {
     background: #4c8bf7;
@@ -36,6 +37,27 @@ body {
 }
 .nav-bar button {
     text-transform: uppercase;
+    border: none;
+    background: #fff;
+    font-size: 18px;
+    height: 100%;
+    font-weight: bold;
+    color: #4c8bf7;
+    outline: 0;
+}
+.nav-bar button:hover {
+    background: #4c8bf7;
+    color: #fff;
+}
+#message {
+    display: inline-block;
+    width: 20%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.active {
+    background: #4c8bf7 !important;
+    color: #fff !important;
 }
 /* class use for js */
 .pickedColor {
