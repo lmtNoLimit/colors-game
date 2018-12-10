@@ -1,6 +1,6 @@
 let numSquare = 6;
 let colors = generateRandomColors(numSquare);
-let pickedColor = colors[Math.round(Math.random() * colors.length)];
+let pickedColor = colors[Math.floor(Math.random() * colors.length)];
 let squares = document.querySelectorAll('.square');
 let msgDisplay = document.getElementById('message');
 let colorDisplay = document.getElementById('color-display');
@@ -13,6 +13,7 @@ function randomColor() {
     let r = Math.round(Math.random()*255);
     let g = Math.round(Math.random()*255);
     let b = Math.round(Math.random()*255);
+    console.log(`rgb(${r}, ${g}, ${b})`);
     return `rgb(${r}, ${g}, ${b})`;
 }
 function generateRandomColors(x) {
@@ -29,7 +30,7 @@ function changeColor(color){
 }
 function reset(){
     colors = generateRandomColors(numSquare);
-    pickedColor = colors[Math.round(Math.random() * colors.length)];
+    pickedColor = colors[Math.floor(Math.random() * colors.length)];
     colorDisplay.textContent = pickedColor;
     backgroundTitle.style.background = '#4c8bf7';
     resetBtn.textContent = 'New Colors';
