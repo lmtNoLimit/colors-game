@@ -65,11 +65,11 @@ body {
     }
     #message {
         width: 50%;
-    }
+    }    
 }
 /* class use for js */
 .pickedColor {
-    font-size: 42px;
+    font-size: 39px;
 }
 .shake {
 	animation-name: shake;
