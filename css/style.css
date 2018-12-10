@@ -59,6 +59,14 @@ body {
     background: #4c8bf7 !important;
     color: #fff !important;
 }
+@media screen and (max-width: 500px) {
+    .nav-bar #reset {
+        display: none;
+    }
+    #message {
+        width: 50%;
+    }
+}
 /* class use for js */
 .pickedColor {
     font-size: 42px;
